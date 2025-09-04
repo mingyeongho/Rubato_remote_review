@@ -1,6 +1,6 @@
 # Claude Code Configuration
 
-# DBM Remote - Reviews
+# Rubato Remote - Reviews
 
 React application with Module Federation using Vite.
 
