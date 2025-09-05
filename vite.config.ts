@@ -16,14 +16,7 @@ export default defineConfig(({ mode }) => {
         exposes: {
           "./reviews": "./src/App.tsx",
         },
-        shared: {
-          react: {
-            singleton: false,
-          },
-          "react-dom": {
-            singleton: false,
-          },
-        },
+        shared: ["react", "react-dom"],
       }),
     ],
   };
