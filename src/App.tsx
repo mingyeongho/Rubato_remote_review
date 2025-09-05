@@ -1,7 +1,7 @@
 function App() {
   return (
     <div>
-      <p style={{ fontSize: 88 }}>Reviews</p>
+      <p style={{ fontSize: 88 }}>Review-dev</p>
     </div>
   );
 }
