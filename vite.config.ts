@@ -1,7 +1,6 @@
 import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import { federation } from "@module-federation/vite";
-import { dependencies } from "./package.json";
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
@@ -19,12 +18,10 @@ export default defineConfig(({ mode }) => {
         },
         shared: {
           react: {
-            singleton: true,
-            requiredVersion: dependencies.react,
+            singleton: false,
           },
           "react-dom": {
-            singleton: true,
-            requiredVersion: dependencies["react-dom"],
+            singleton: false,
           },
         },
       }),
